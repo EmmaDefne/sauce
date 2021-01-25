@@ -37,8 +37,8 @@ public class AddToCartStepDefinitions {
 
     @Then("User verifies the items are added to the shopping cart")
     public void user_verifies_the_items_are_added_to_the_shopping_cart() {
-        Assert.assertEquals("Sauce Labs Onesie",shopping.shoppingCartItems.get(0).getText() );
-        Assert.assertEquals("Sauce Labs Fleece Jacket",shopping.shoppingCartItems.get(shopping.shoppingCartItems.size() - 1).getText() );
+      Assert.assertEquals("Sauce Labs Onesie",shopping.shoppingCartItems.get(0).getText() );
+          Assert.assertEquals("Sauce Labs Fleece Jacket",shopping.shoppingCartItems.get(shopping.shoppingCartItems.size() - 1).getText() );
 
     }
 

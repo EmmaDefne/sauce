@@ -1,1 +1,1 @@
-file:src/test/resources/features/CheckOut.feature:23:31
+file:src/test/resources/features/CheckOut.feature:23

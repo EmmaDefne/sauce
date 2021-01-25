@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources",
         dryRun = false,
         strict = false,
-        tags = " @CheckOut",
+        tags = "@CheckOutNegative",
         plugin = {
                 "html:target/default-report",
                 "json:target/cucumber1.json",

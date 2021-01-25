@@ -23,9 +23,9 @@ public class AddToCartPage extends AbstractPageBase{
 
     public void clickToAddToCart() {
         System.out.println(addToCartButtons.size());
-        BrowserUtilities.wait(4);
+        BrowserUtilities.wait(7);
         wait.until(ExpectedConditions.visibilityOf(addToCartButtons.get(0))).click();
-        BrowserUtilities.wait(4);
+        BrowserUtilities.wait(7);
         wait.until(ExpectedConditions.visibilityOf(addToCartButtons.get(addToCartButtons.size() - 1))).click();
 
 
