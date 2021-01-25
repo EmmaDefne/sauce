@@ -25,7 +25,7 @@ public class AddToCartStepDefinitions {
     }
 
     @Then("User adds  any item to shopping cart")
-    public void user_adds_any_item_to_shopping_cart() {
+    public void user_adds_any_item_to_shopping_cart() throws Exception {
      addToCartObject.clickToAddToCart();
 
     }

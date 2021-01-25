@@ -1,4 +1,5 @@
-@Cart
+
+@Cart @Regression
 Feature: Add To Cart
   As a user, I want to be able to add any item into shopping cart
 

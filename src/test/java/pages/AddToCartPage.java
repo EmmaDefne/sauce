@@ -21,11 +21,11 @@ public class AddToCartPage extends AbstractPageBase{
 
 
 
-    public void clickToAddToCart() {
+    public void clickToAddToCart() throws Exception{
         System.out.println(addToCartButtons.size());
-        BrowserUtilities.wait(7);
+        BrowserUtilities.wait(3);
         wait.until(ExpectedConditions.visibilityOf(addToCartButtons.get(0))).click();
-        BrowserUtilities.wait(7);
+        BrowserUtilities.wait(3);
         wait.until(ExpectedConditions.visibilityOf(addToCartButtons.get(addToCartButtons.size() - 1))).click();
 
 

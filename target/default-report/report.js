@@ -1,8 +1,437 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CheckOut.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AddToCart.feature");
+formatter.feature({
+  "name": "Add To Cart",
+  "description": "  As a user, I want to be able to add any item into shopping cart",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@Cart"
+    },
+    {
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "User adds to cart two or more items",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@addToCart"
+    }
+  ]
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User should verify that title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User is able to remove any item from shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks continue shopping button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "User_Name",
+        "Password"
+      ]
+    },
+    {
+      "cells": [
+        "standard_user",
+        "secret_sauce"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "User adds to cart two or more items",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Cart"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@addToCart"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_should_verify_that_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is able to remove any item from shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_is_able_to_remove_any_item_from_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks continue shopping button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_continue_shopping_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "User will be able to remove any item from shopping cart",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@removeItem"
+    }
+  ]
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User should verify that title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User is able to remove any item from shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks continue shopping button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "User_Name",
+        "Password"
+      ]
+    },
+    {
+      "cells": [
+        "standard_user",
+        "secret_sauce"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "User will be able to remove any item from shopping cart",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Cart"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@removeItem"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_should_verify_that_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is able to remove any item from shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_is_able_to_remove_any_item_from_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks continue shopping button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_continue_shopping_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/CheckOut.feature");
 formatter.feature({
   "name": "Add To Cart",
   "description": "  As a user, I want to be able to check out",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.scenarioOutline({
   "name": "User adds to cart two or more items",
@@ -94,6 +523,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
+    {
+      "name": "@Regression"
+    },
     {
       "name": "@CheckOut"
     }
@@ -210,8 +642,7 @@ formatter.match({
   "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d88.0.4324.96)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1859:259a:984c:9009%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gglgn0ln17j...}, goog:chromeOptions: {debuggerAddress: localhost:65412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 814137c785c43f56da823e038b89caed\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027inventory_item_name\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)\n\tat org.openqa.selenium.By$ByXPath.findElements(By.java:348)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)\n\tat com.sun.proxy.$Proxy20.get(Unknown Source)\n\tat step_definitions.AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart(AddToCartStepDefinitions.java:40)\n\tat ✽.User verifies the items are added to the shopping cart(file:src/test/resources/features/CheckOut.feature:16)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "User verifies total price is added to the shopping cart",
@@ -221,7 +652,7 @@ formatter.match({
   "location": "CheckOutStepDefinitions.user_verifies_total_price_is_added_to_the_shopping_cart()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User click finish button",
@@ -231,7 +662,7 @@ formatter.match({
   "location": "CheckOutStepDefinitions.user_click_finish_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User verifies SwagLabs Page header text is \"THANK YOU FOR YOUR ORDER\"",
@@ -241,10 +672,1247 @@ formatter.match({
   "location": "CheckOutStepDefinitions.user_verifies_SwagLabs_Page_header_text_is(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
-  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d88.0.4324.96)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1859:259a:984c:9009%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gglgn0ln17j...}, goog:chromeOptions: {debuggerAddress: localhost:65412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 814137c785c43f56da823e038b89caed\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\n\tat step_definitions.Hooks.tearDown(Hooks.java:36)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)\n\tat com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)\n\tat com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)\n",
-  "status": "failed"
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/Login.feature");
+formatter.feature({
+  "name": "Login",
+  "description": "  As a User, I want to be able to login with username and password",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login_Positive"
+    }
+  ]
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "User_Name",
+        "Password"
+      ]
+    },
+    {
+      "cells": [
+        "standard_user",
+        "secret_sauce"
+      ]
+    },
+    {
+      "cells": [
+        "problem_user",
+        "secret_sauce"
+      ]
+    },
+    {
+      "cells": [
+        "performance_glitch_user",
+        "secret_sauce"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@login_Positive"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@login_Positive"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"problem_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@login_Positive"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"performance_glitch_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@locked_out_User"
+    }
+  ]
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User should not able to login and see error message \"\u003cError Message\u003e\" on the login page",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "User_Name",
+        "Password",
+        "Error Message"
+      ]
+    },
+    {
+      "cells": [
+        "locked_out_user",
+        "secret_sauce",
+        "Epic sadface: Sorry, this user has been locked out."
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@locked_out_User"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"locked_out_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should not able to login and see error message \"Epic sadface: Sorry, this user has been locked out.\" on the login page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_not_able_to_login_and_see_error_message_on_the_login_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "User sorts the items by price from lowest to highest",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@sortItems"
+    }
+  ]
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "User_Name",
+        "Password"
+      ]
+    },
+    {
+      "cells": [
+        "standard_user",
+        "secret_sauce"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "User sorts the items by price from lowest to highest",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@sortItems"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@loginNegative"
+    }
+  ]
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "User_Name",
+        "Password",
+        "Error_Message_For_User_Name",
+        "Error_Message_For_Password"
+      ]
+    },
+    {
+      "cells": [
+        "standard_user",
+        "",
+        "",
+        "Epic sadface: Password is required"
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "secret_sauce",
+        "Epic sadface: Username is required",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "",
+        "Epic sadface: Username is required",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "performance_glitch_user",
+        "hfjkhfl",
+        "",
+        "Epic sadface: Username and password do not match any user in this service"
+      ]
+    },
+    {
+      "cells": [
+        "dnfjdkfhkldf",
+        "secret_sauce",
+        "Epic sadface: Username and password do not match any user in this service",
+        ""
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@loginNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"standard_user\" password \"\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@loginNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@loginNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"\" password \"\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@loginNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"performance_glitch_user\" password \"hfjkhfl\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login as user and verify that page title is Swag Labs",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@loginNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with user name \"dnfjdkfhkldf\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that page title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/NegativeCheckOut.feature");
+formatter.feature({
+  "name": "Add To Cart",
+  "description": "  As a user, I want to be able to check out",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "User adds to cart two or more items",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@CheckOutNegative"
+    }
+  ]
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks checkout button",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with  last name \"\u003cLast_Name\u003e\" zip code \"\u003cZip_Code\u003e\" and User verifies the Error Message \"\u003cError Message\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"\u003cFirst_Name\u003e\"  zip code \"\u003cZip_Code\u003e\" and User verifies the Error Message \"\u003cError Message\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"\u003cFirst_Name\u003e\" last name \"\u003cLast_Name\u003e\" and User verifies the Error Message \"\u003cError Message\u003e\"",
+  "keyword": "When "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "First_Name",
+        "Last_Name",
+        "Zip_Code",
+        "Error Message",
+        "User_Name",
+        "Password"
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "Parker",
+        "08767",
+        "Error: First Name is required",
+        "standard_user",
+        "secret_sauce"
+      ]
+    },
+    {
+      "cells": [
+        "Emma",
+        "",
+        "09876",
+        "Error: Last Name is required",
+        "standard_user",
+        "secret_sauce"
+      ]
+    },
+    {
+      "cells": [
+        "Emma",
+        "Parker",
+        "",
+        "Error: Postal Code is required",
+        "standard_user",
+        "secret_sauce"
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "",
+        "",
+        "Error: First Name is required",
+        "standard_user",
+        "secret_sauce"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "User adds to cart two or more items",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@CheckOutNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks checkout button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with  last name \"Parker\" zip code \"08767\" and User verifies the Error Message \"Error: First Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_last_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"\"  zip code \"08767\" and User verifies the Error Message \"Error: First Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"\" last name \"Parker\" and User verifies the Error Message \"Error: First Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_last_name_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User adds to cart two or more items",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@CheckOutNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks checkout button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with  last name \"\" zip code \"09876\" and User verifies the Error Message \"Error: Last Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_last_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"Emma\"  zip code \"09876\" and User verifies the Error Message \"Error: Last Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"Emma\" last name \"\" and User verifies the Error Message \"Error: Last Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_last_name_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User adds to cart two or more items",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@CheckOutNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks checkout button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with  last name \"Parker\" zip code \"\" and User verifies the Error Message \"Error: Postal Code is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_last_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"Emma\"  zip code \"\" and User verifies the Error Message \"Error: Postal Code is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"Emma\" last name \"Parker\" and User verifies the Error Message \"Error: Postal Code is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_last_name_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User adds to cart two or more items",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Regression"
+    },
+    {
+      "name": "@CheckOutNegative"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks checkout button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with  last name \"\" zip code \"\" and User verifies the Error Message \"Error: First Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_last_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"\"  zip code \"\" and User verifies the Error Message \"Error: First Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out on the checkout page  with first name \"\" last name \"\" and User verifies the Error Message \"Error: First Name is required\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_last_name_and_User_verifies_the_Error_Message(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 });

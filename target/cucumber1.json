@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-01-25T06:53:21.854Z",
+        "start_timestamp": "2021-01-25T07:57:09.376Z",
         "before": [
           {
             "result": {
-              "duration": 8182577302,
+              "duration": 9081706133,
               "status": "passed"
             },
             "match": {
@@ -15,16 +15,15 @@
             }
           }
         ],
-        "line": 23,
+        "line": 22,
         "name": "User adds to cart two or more items",
         "description": "",
         "id": "add-to-cart;user-adds-to-cart-two-or-more-items;;2",
         "after": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d88.0.4324.96)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1859:259a:984c:9009%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gglgn0ln17j...}, goog:chromeOptions: {debuggerAddress: localhost:65412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 814137c785c43f56da823e038b89caed\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\n\tat step_definitions.Hooks.tearDown(Hooks.java:36)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)\n\tat com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)\n\tat com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)\n",
-              "duration": 12981360,
-              "status": "failed"
+              "duration": 298967465,
+              "status": "passed"
             },
             "match": {
               "location": "Hooks.tearDown(Scenario)"
@@ -36,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 106218522,
+              "duration": 63565319,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "User launches the Swag Labs page",
             "match": {
               "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
@@ -48,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 6012107735,
+              "duration": 2893430766,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
             "match": {
               "arguments": [
@@ -70,10 +69,10 @@
           },
           {
             "result": {
-              "duration": 35545233,
+              "duration": 29798545,
               "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "User should verify that title is a Swag Labs",
             "match": {
               "location": "AddToCartStepDefinitions.user_should_verify_that_title_is_a_Swag_Labs()"
@@ -82,10 +81,10 @@
           },
           {
             "result": {
-              "duration": 391411880,
+              "duration": 295913201,
               "status": "passed"
             },
-            "line": 9,
+            "line": 11,
             "name": "User clicks the product sort button",
             "match": {
               "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
@@ -94,10 +93,10 @@
           },
           {
             "result": {
-              "duration": 494613846,
+              "duration": 473390191,
               "status": "passed"
             },
-            "line": 10,
+            "line": 12,
             "name": "User will able to sort items by price from lowest the highest",
             "match": {
               "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
@@ -106,10 +105,10 @@
           },
           {
             "result": {
-              "duration": 14273921580,
+              "duration": 6243006986,
               "status": "passed"
             },
-            "line": 11,
+            "line": 13,
             "name": "User adds  any item to shopping cart",
             "match": {
               "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
@@ -118,10 +117,10 @@
           },
           {
             "result": {
-              "duration": 454212907,
+              "duration": 223683300,
               "status": "passed"
             },
-            "line": 12,
+            "line": 14,
             "name": "User clicks shopping cart button",
             "match": {
               "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
@@ -130,10 +129,10 @@
           },
           {
             "result": {
-              "duration": 167652822,
+              "duration": 108686405,
               "status": "passed"
             },
-            "line": 13,
+            "line": 15,
             "name": "User verifies the items are added to the shopping cart",
             "match": {
               "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
@@ -142,10 +141,410 @@
           },
           {
             "result": {
-              "duration": 6416043620,
+              "duration": 161431243,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is able to remove any item from shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_is_able_to_remove_any_item_from_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 478797321,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks continue shopping button",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_clicks_continue_shopping_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6290317115,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User adds  any item to shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cart"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@addToCart"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:57:36.507Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5931035258,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "User will be able to remove any item from shopping cart",
+        "description": "",
+        "id": "add-to-cart;user-will-be-able-to-remove-any-item-from-shopping-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 209856033,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20945172,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2993086025,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31172051,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User should verify that title is a Swag Labs",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_should_verify_that_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 282579781,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User clicks the product sort button",
+            "match": {
+              "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 395803597,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User will able to sort items by price from lowest the highest",
+            "match": {
+              "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6247858890,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User adds  any item to shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 292822234,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User clicks shopping cart button",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 101552790,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User verifies the items are added to the shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 152020769,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User is able to remove any item from shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_is_able_to_remove_any_item_from_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 212345898,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User clicks continue shopping button",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_clicks_continue_shopping_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6279596464,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User adds  any item to shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cart"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@removeItem"
+          }
+        ]
+      }
+    ],
+    "name": "Add To Cart",
+    "description": "  As a user, I want to be able to add any item into shopping cart",
+    "id": "add-to-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddToCart.feature",
+    "tags": [
+      {
+        "name": "@Cart",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 7
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-25T07:57:59.694Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5314647485,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User adds to cart two or more items",
+        "description": "",
+        "id": "add-to-cart;user-adds-to-cart-two-or-more-items;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 255757619,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12119589,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3333457957,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22892354,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should verify that title is a Swag Labs",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_should_verify_that_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 280553584,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks the product sort button",
+            "match": {
+              "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 377207155,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User will able to sort items by price from lowest the highest",
+            "match": {
+              "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6315076865,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User adds  any item to shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 221485591,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks shopping cart button",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 136148565,
               "status": "passed"
             },
             "line": 14,
+            "name": "User verifies the items are added to the shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6334416521,
+              "status": "passed"
+            },
+            "line": 15,
             "name": "User clicks checkout button",
             "match": {
               "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
@@ -154,10 +553,10 @@
           },
           {
             "result": {
-              "duration": 3687494881,
+              "duration": 3765960213,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "User fills out all information on the checkout page",
             "match": {
               "location": "CheckOutStepDefinitions.user_fills_out_all_information_on_the_checkout_page()"
@@ -166,11 +565,10 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d88.0.4324.96)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1859:259a:984c:9009%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gglgn0ln17j...}, goog:chromeOptions: {debuggerAddress: localhost:65412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 814137c785c43f56da823e038b89caed\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027inventory_item_name\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)\n\tat org.openqa.selenium.By$ByXPath.findElements(By.java:348)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)\n\tat com.sun.proxy.$Proxy20.get(Unknown Source)\n\tat step_definitions.AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart(AddToCartStepDefinitions.java:40)\n\tat ✽.User verifies the items are added to the shopping cart(file:src/test/resources/features/CheckOut.feature:16)\n",
-              "duration": 175748992,
-              "status": "failed"
+              "duration": 112986772,
+              "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "User verifies the items are added to the shopping cart",
             "match": {
               "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
@@ -179,10 +577,10 @@
           },
           {
             "result": {
-              "duration": 2211850,
-              "status": "skipped"
+              "duration": 41778234,
+              "status": "passed"
             },
-            "line": 17,
+            "line": 18,
             "name": "User verifies total price is added to the shopping cart",
             "match": {
               "location": "CheckOutStepDefinitions.user_verifies_total_price_is_added_to_the_shopping_cart()"
@@ -191,10 +589,10 @@
           },
           {
             "result": {
-              "duration": 1301127,
-              "status": "skipped"
+              "duration": 313584030,
+              "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "User click finish button",
             "match": {
               "location": "CheckOutStepDefinitions.user_click_finish_button()"
@@ -203,10 +601,10 @@
           },
           {
             "result": {
-              "duration": 750712,
-              "status": "skipped"
+              "duration": 52006489,
+              "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "User verifies SwagLabs Page header text is \"THANK YOU FOR YOUR ORDER\"",
             "match": {
               "arguments": [
@@ -222,6 +620,9 @@
         ],
         "tags": [
           {
+            "name": "@Regression"
+          },
+          {
             "name": "@CheckOut"
           }
         ]
@@ -232,6 +633,1701 @@
     "id": "add-to-cart",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/CheckOut.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-25T07:58:26.636Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4875466860,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 258395380,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10575056,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3343302373,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User logs in to Swag Labs with user name \"standard_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 66
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18391103,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@login_Positive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:58:35.169Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5154151563,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 330438173,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9222944,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3046639090,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User logs in to Swag Labs with user name \"problem_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"problem_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67983244,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@login_Positive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:58:43.789Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5766005347,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 251357014,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13111761,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8347588941,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User logs in to Swag Labs with user name \"performance_glitch_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"performance_glitch_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 76
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19042465,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@login_Positive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:58:58.196Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6571339611,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 256132970,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12935004,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2518300582,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User logs in to Swag Labs with user name \"locked_out_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locked_out_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 68
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92722687,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should not able to login and see error message \"Epic sadface: Sorry, this user has been locked out.\" on the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Sorry, this user has been locked out.\"",
+                  "offset": 52
+                }
+              ],
+              "location": "LoginStepDefinitions.user_should_not_able_to_login_and_see_error_message_on_the_login_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@locked_out_User"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:59:07.662Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4503905774,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "User sorts the items by price from lowest to highest",
+        "description": "",
+        "id": "login;user-sorts-the-items-by-price-from-lowest-to-highest;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 426346508,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38538500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3832436906,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16651873,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 439333684,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User clicks the product sort button",
+            "match": {
+              "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 547234961,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User will able to sort items by price from lowest the highest",
+            "match": {
+              "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@sortItems"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:59:17.484Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5761510022,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 213018998,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8452264,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2326452790,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User logs in to Swag Labs with user name \"standard_user\" password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 66
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24829206,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@loginNegative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:59:25.844Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4135762155,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 240155513,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11098234,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2397408097,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User logs in to Swag Labs with user name \"\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 53
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16926736,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@loginNegative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:59:32.654Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5071001552,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 50,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 254796814,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6762453,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2356936557,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User logs in to Swag Labs with user name \"\" password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 53
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31783000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@loginNegative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:59:40.383Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4428083457,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 297808316,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7770846,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2424689395,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User logs in to Swag Labs with user name \"performance_glitch_user\" password \"hfjkhfl\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"performance_glitch_user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"hfjkhfl\"",
+                  "offset": 76
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99572660,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@loginNegative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T07:59:47.646Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4708258300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "Login as user and verify that page title is Swag Labs",
+        "description": "",
+        "id": "login;login-as-user-and-verify-that-page-title-is-swag-labs;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 287864729,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7575384,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User launches the Swag Labs page",
+            "match": {
+              "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2548365878,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User logs in to Swag Labs with user name \"dnfjdkfhkldf\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dnfjdkfhkldf\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47888360,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User should verify that page title is a Swag Labs",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@loginNegative"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As a User, I want to be able to login with username and password",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-25T07:59:55.257Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6144610656,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "User adds to cart two or more items",
+        "description": "",
+        "id": "add-to-cart;user-adds-to-cart-two-or-more-items;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 253073397,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3428653383,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6283358986,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User adds  any item to shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 390810131,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks shopping cart button",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6374265392,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks checkout button",
+            "match": {
+              "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 587154835,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User fills out on the checkout page  with  last name \"Parker\" zip code \"08767\" and User verifies the Error Message \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Parker\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"08767\"",
+                  "offset": 71
+                },
+                {
+                  "val": "\"Error: First Name is required\"",
+                  "offset": 115
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_last_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 320207445,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User fills out on the checkout page  with first name \"\"  zip code \"08767\" and User verifies the Error Message \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"08767\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"Error: First Name is required\"",
+                  "offset": 110
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190750809,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User fills out on the checkout page  with first name \"\" last name \"Parker\" and User verifies the Error Message \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"Parker\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"Error: First Name is required\"",
+                  "offset": 111
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_last_name_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@CheckOutNegative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T08:00:19.257Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5536713295,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User adds to cart two or more items",
+        "description": "",
+        "id": "add-to-cart;user-adds-to-cart-two-or-more-items;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 299984083,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2918780077,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6303464319,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User adds  any item to shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 457116160,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks shopping cart button",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6252338272,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks checkout button",
+            "match": {
+              "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 319843702,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User fills out on the checkout page  with  last name \"\" zip code \"09876\" and User verifies the Error Message \"Error: Last Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"09876\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"Error: Last Name is required\"",
+                  "offset": 109
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_last_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 274546467,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User fills out on the checkout page  with first name \"Emma\"  zip code \"09876\" and User verifies the Error Message \"Error: Last Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Emma\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"09876\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"Error: Last Name is required\"",
+                  "offset": 114
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196199750,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User fills out on the checkout page  with first name \"Emma\" last name \"\" and User verifies the Error Message \"Error: Last Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Emma\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"Error: Last Name is required\"",
+                  "offset": 109
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_last_name_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@CheckOutNegative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T08:00:41.825Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5101713908,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "User adds to cart two or more items",
+        "description": "",
+        "id": "add-to-cart;user-adds-to-cart-two-or-more-items;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 287136256,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3004127644,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6229827042,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User adds  any item to shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 225511016,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks shopping cart button",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6183541885,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks checkout button",
+            "match": {
+              "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 283013992,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User fills out on the checkout page  with  last name \"Parker\" zip code \"\" and User verifies the Error Message \"Error: Postal Code is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Parker\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 71
+                },
+                {
+                  "val": "\"Error: Postal Code is required\"",
+                  "offset": 110
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_last_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 250654063,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User fills out on the checkout page  with first name \"Emma\"  zip code \"\" and User verifies the Error Message \"Error: Postal Code is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Emma\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"Error: Postal Code is required\"",
+                  "offset": 109
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 262093285,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User fills out on the checkout page  with first name \"Emma\" last name \"Parker\" and User verifies the Error Message \"Error: Postal Code is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Emma\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"Parker\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"Error: Postal Code is required\"",
+                  "offset": 115
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_last_name_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@CheckOutNegative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-25T08:01:03.670Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4319257391,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User adds to cart two or more items",
+        "description": "",
+        "id": "add-to-cart;user-adds-to-cart-two-or-more-items;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 309647119,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2922014911,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6246258524,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User adds  any item to shopping cart",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 468348422,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks shopping cart button",
+            "match": {
+              "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6204840555,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks checkout button",
+            "match": {
+              "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 268184464,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User fills out on the checkout page  with  last name \"\" zip code \"\" and User verifies the Error Message \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"Error: First Name is required\"",
+                  "offset": 104
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_last_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 227369052,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User fills out on the checkout page  with first name \"\"  zip code \"\" and User verifies the Error Message \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"Error: First Name is required\"",
+                  "offset": 105
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_zip_code_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 203619199,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User fills out on the checkout page  with first name \"\" last name \"\" and User verifies the Error Message \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"Error: First Name is required\"",
+                  "offset": 105
+                }
+              ],
+              "location": "NegativeCheckOutStepDefinitions.user_fills_out_on_the_checkout_page_with_first_name_last_name_and_User_verifies_the_Error_Message(String,String,String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@CheckOutNegative"
+          }
+        ]
+      }
+    ],
+    "name": "Add To Cart",
+    "description": "  As a user, I want to be able to check out",
+    "id": "add-to-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/NegativeCheckOut.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

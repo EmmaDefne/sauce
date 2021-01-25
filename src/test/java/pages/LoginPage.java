@@ -48,10 +48,10 @@ public class LoginPage extends AbstractPageBase {
 
     public void login(String User_Name, String Password) {
         userName.sendKeys(User_Name);
-        BrowserUtilities.wait(5);
+        BrowserUtilities.wait(2);
         password.sendKeys(Password, Keys.ENTER);
 
-        BrowserUtilities.waitForPageToLoad(10);
+        BrowserUtilities.waitForPageToLoad(5);
     }
 
     public void sortItem(){

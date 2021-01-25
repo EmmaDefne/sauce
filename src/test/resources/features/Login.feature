@@ -1,4 +1,4 @@
-@login
+@login @Regression
 Feature: Login
   As a User, I want to be able to login with username and password
 
