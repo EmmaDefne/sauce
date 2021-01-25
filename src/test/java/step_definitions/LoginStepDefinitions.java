@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.LoginPage;
 import utilities.BrowserUtilities;
@@ -58,17 +59,28 @@ public class LoginStepDefinitions {
 
 
     }
-
     @Then("User clicks the product sort button")
     public void user_clicks_the_product_sort_button() {
-
-
-
+        loginPage.sortItem();
+        Assert.assertEquals(true, loginPage.lowToHigh.isSelected());
+           System.out.println("We clicked product sort button");
 
     }
 
     @Then("User will able to sort items by price from lowest the highest")
     public void user_will_able_to_sort_items_by_price_from_lowest_the_highest() {
-    }
+        loginPage.sortItem();
+
+        for (WebElement each : loginPage.inventoryItemsList()){
+            Assert.assertTrue(each.isDisplayed());
+            System.out.println(each.getText() + "  \n is displayed") ;
+
+        }
+
+
+        }
+
+
+
 
 }

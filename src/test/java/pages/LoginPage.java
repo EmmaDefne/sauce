@@ -6,16 +6,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import utilities.BrowserUtilities;
 import utilities.ConfigurationReader;
+import utilities.Driver;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LoginPage extends AbstractPageBase {
-   public WebDriver driver;
-//    private By usernameInputField = By.id("user-name");
-//    private By passwordInputField = By.id("password");
-//    private By loginButton = By.cssSelector(".btn_action");
 
     @FindBy (xpath = "//input[@id='user-name']")
     public WebElement userName;
@@ -39,39 +38,33 @@ public class LoginPage extends AbstractPageBase {
    @FindBy(xpath = "//option[.='Price (low to high)']")
    public WebElement lowToHigh;
 
+   @FindBy( className = "inventory_item_price")
+   public List<WebElement> inventoryItems;
 
 
 
-    public WebElement getVisualizaProducts() {
-        return visualizaProducts;
-    }
-
-    public WebElement getInputUsername() {
-        return userName;
-    }
-
-    public WebElement getInputPasssword() {
-        return password;
-    }
-
-    public WebElement getBtnLogin() {
-        return btnLogin;
-    }
 
 
-
-//    public LoginPage(WebDriver driver){
-//        this.driver = driver;
-//        PageFactory.initElements(driver, this);
-//    }
 
     public void login(String User_Name, String Password) {
-
         userName.sendKeys(User_Name);
-        password.sendKeys(Password);
-        btnLogin.click();
-       BrowserUtilities.waitForPageToLoad(10);
-        BrowserUtilities.wait(3);
+        BrowserUtilities.wait(5);
+        password.sendKeys(Password, Keys.ENTER);
+
+        BrowserUtilities.waitForPageToLoad(10);
+    }
+
+    public void sortItem(){
+       Select selectItem = new Select(product_sort_container);
+       selectItem.selectByVisibleText("Price (low to high)");
+
+    }
+
+    public List<WebElement> inventoryItemsList() {
+        List<WebElement> listOfInventory = Driver.getDriver().findElements(By.className("inventory_item_price"));
+
+        return listOfInventory;
+
     }
 
 

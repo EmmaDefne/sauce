@@ -1,6 +1,6 @@
 @login
 Feature: Login
-  As a user, I want to be able to login with username and password
+  As a User, I want to be able to login with username and password
 
 
 
@@ -28,12 +28,15 @@ Scenario Outline: Login as user and verify that page title is Swag Labs
 
 
   @sortItems
-    Scenario: User sorts the items by price from lowest to highest
+   Scenario Outline: User sorts the items by price from lowest to highest
       Given User launches the Swag Labs page
       When User logs in to Swag Labs with username "<User_Name>" password "<Password>"
       Then User should verify that page title is a Swag Labs
       Then User clicks the product sort button
       Then User will able to sort items by price from lowest the highest
+      Examples:
+        | User_Name               | Password |
+        | standard_user           | secret_sauce |
 
 @loginNegative
   Scenario Outline: Login as user and verify that page title is Swag Labs

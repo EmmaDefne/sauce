@@ -8,7 +8,7 @@ Feature: Add To Cart
     Then User should verify that title is a Swag Labs
     Then User clicks the product sort button
     Then User will able to sort items by price from lowest the highest
-    Then User adds to cart any item on the Swag Labs Page
+    Then User adds  any item to shopping cart
     Then User clicks shopping cart button
     Then User verifies the items are added to the shopping cart
     Then User clicks checkout button
@@ -18,13 +18,19 @@ Feature: Add To Cart
     Then User click finish button
     Then User verifies SwagLabs Page header text is "THANK YOU FOR YOUR ORDER"
 
+Examples:
+  | User_Name               | Password |
+  | standard_user           | secret_sauce |
+## | problem_user            |secret_sauce  |
+## | performance_glitch_user |secret_sauce  |
+
 
 
     Examples:
-      | User_Name               | Password     |
-      | standard_user           | secret_sauce |
-      | problem_user            |secret_sauce  |
-      | performance_glitch_user |secret_sauce  |
+      | User_Name     | Password     |
+      | standard_user | secret_sauce |
+#      | problem_user            |secret_sauce  |
+#      | performance_glitch_user |secret_sauce  |
 
 
 @CheckOutNegative

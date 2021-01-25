@@ -10,11 +10,14 @@ import utilities.Driver;
 public class Hooks {
 
     @Before(order = 2)
-    public void setup() {
+    public void setup() throws Exception{
         System.out.println("Test setup");
+        Driver.getDriver().get("https://www.saucedemo.com/");
         Driver.getDriver().manage().window().maximize();
-    }
 
+        Thread.sleep(1000);
+
+    }
     @Before(value = "@driver", order = 1)
     public void specialSetup() {
         System.out.println("Setup for driver only");

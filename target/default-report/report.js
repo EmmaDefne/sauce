@@ -1,21 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CheckOut.feature");
 formatter.feature({
-  "name": "Login",
-  "description": "  As a user, I want to be able to login with username and password",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@login"
-    }
-  ]
+  "name": "Add To Cart",
+  "description": "  As a user, I want to be able to check out",
+  "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Login as user and verify that page title is Swag Labs",
+  "name": "User adds to cart two or more items",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@login_Positive"
+      "name": "@CheckOut"
     }
   ]
 });
@@ -24,11 +19,55 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "User logs in to Swag Labs with user name \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
+  "name": "User logs in to Swag Labs with username \"\u003cUser_Name\u003e\" password \"\u003cPassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "name": "User should verify that page title is a Swag Labs",
+  "name": "User should verify that title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User clicks checkout button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User fills out all information on the checkout page",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User verifies total price is added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User click finish button",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "User verifies SwagLabs Page header text is \"THANK YOU FOR YOUR ORDER\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -47,31 +86,193 @@ formatter.examples({
         "standard_user",
         "secret_sauce"
       ]
-    },
+    }
+  ]
+});
+formatter.scenario({
+  "name": "User adds to cart two or more items",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@CheckOut"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User launches the Swag Labs page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should verify that title is a Swag Labs",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_should_verify_that_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks checkout button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out all information on the checkout page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_fills_out_all_information_on_the_checkout_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
+});
+formatter.result({
+  "error_message": "java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)\n\tat java.base/java.util.Objects.checkIndex(Objects.java:372)\n\tat java.base/java.util.ArrayList.get(ArrayList.java:458)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\n\tat com.sun.proxy.$Proxy20.get(Unknown Source)\n\tat step_definitions.AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart(AddToCartStepDefinitions.java:40)\n\tat ✽.User verifies the items are added to the shopping cart(file:src/test/resources/features/CheckOut.feature:16)\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "User verifies total price is added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_verifies_total_price_is_added_to_the_shopping_cart()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click finish button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_click_finish_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User verifies SwagLabs Page header text is \"THANK YOU FOR YOUR ORDER\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_verifies_SwagLabs_Page_header_text_is(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.embedding("image/png", "embedded0.png", "User adds to cart two or more items");
+formatter.after({
+  "status": "passed"
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
     {
       "cells": [
-        "problem_user",
-        "secret_sauce"
+        "User_Name",
+        "Password"
       ]
     },
     {
       "cells": [
-        "performance_glitch_user",
+        "standard_user",
         "secret_sauce"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Login as user and verify that page title is Swag Labs",
+  "name": "User adds to cart two or more items",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@login"
-    },
-    {
-      "name": "@login_Positive"
+      "name": "@CheckOut"
     }
   ]
 });
@@ -89,129 +290,137 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User logs in to Swag Labs with user name \"standard_user\" password \"secret_sauce\"",
+  "name": "User logs in to Swag Labs with username \"standard_user\" password \"secret_sauce\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
+  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_username_password(String,String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027user-name\u0027]\"}\n  (Session info: chrome\u003d88.0.4324.96)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1859:259a:984c:9009%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gglgn0ln17j...}, goog:chromeOptions: {debuggerAddress: localhost:63328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: cfd7e59063bc704741c07da3db8a8fd6\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027user-name\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\n\tat pages.LoginPage.login(LoginPage.java:70)\n\tat step_definitions.LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(LoginStepDefinitions.java:32)\n\tat ✽.User logs in to Swag Labs with user name \"standard_user\" password \"secret_sauce\"(file:src/test/resources/features/Login.feature:10)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User should verify that page title is a Swag Labs",
+  "name": "User should verify that title is a Swag Labs",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+  "location": "AddToCartStepDefinitions.user_should_verify_that_title_is_a_Swag_Labs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks the product sort button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_clicks_the_product_sort_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User will able to sort items by price from lowest the highest",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefinitions.user_will_able_to_sort_items_by_price_from_lowest_the_highest()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User adds  any item to shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_adds_any_item_to_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks shopping cart button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_clicks_shopping_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks checkout button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_clicks_checkout_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fills out all information on the checkout page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_fills_out_all_information_on_the_checkout_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User verifies the items are added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart()"
+});
+formatter.result({
+  "error_message": "java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)\n\tat java.base/java.util.Objects.checkIndex(Objects.java:372)\n\tat java.base/java.util.ArrayList.get(ArrayList.java:458)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\n\tat com.sun.proxy.$Proxy20.get(Unknown Source)\n\tat step_definitions.AddToCartStepDefinitions.user_verifies_the_items_are_added_to_the_shopping_cart(AddToCartStepDefinitions.java:40)\n\tat ✽.User verifies the items are added to the shopping cart(file:src/test/resources/features/CheckOut.feature:16)\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "User verifies total price is added to the shopping cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CheckOutStepDefinitions.user_verifies_total_price_is_added_to_the_shopping_cart()"
 });
 formatter.result({
   "status": "skipped"
 });
-formatter.embedding("image/png", "embedded0.png", "Login as user and verify that page title is Swag Labs");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login as user and verify that page title is Swag Labs",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@login_Positive"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User launches the Swag Labs page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in to Swag Labs with user name \"problem_user\" password \"secret_sauce\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
-});
-formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027user-name\u0027]\"}\n  (Session info: chrome\u003d88.0.4324.96)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1859:259a:984c:9009%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gglgn0ln17j...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 5de0e1a7df306f738cd8d9ee0a0d0189\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027user-name\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\n\tat pages.LoginPage.login(LoginPage.java:70)\n\tat step_definitions.LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(LoginStepDefinitions.java:32)\n\tat ✽.User logs in to Swag Labs with user name \"problem_user\" password \"secret_sauce\"(file:src/test/resources/features/Login.feature:10)\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "User should verify that page title is a Swag Labs",
+  "name": "User click finish button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+  "location": "CheckOutStepDefinitions.user_click_finish_button()"
 });
 formatter.result({
   "status": "skipped"
 });
-formatter.embedding("image/png", "embedded1.png", "Login as user and verify that page title is Swag Labs");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login as user and verify that page title is Swag Labs",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@login_Positive"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User launches the Swag Labs page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_launches_the_Swag_Labs_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User logs in to Swag Labs with user name \"performance_glitch_user\" password \"secret_sauce\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(String,String)"
-});
-formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027user-name\u0027]\"}\n  (Session info: chrome\u003d88.0.4324.96)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1859:259a:984c:9009%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gglgn0ln17j...}, goog:chromeOptions: {debuggerAddress: localhost:63389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ec017c8bf7b9d8de56e66172be78fea9\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027user-name\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\n\tat pages.LoginPage.login(LoginPage.java:70)\n\tat step_definitions.LoginStepDefinitions.user_logs_in_to_Swag_Labs_with_user_name_password(LoginStepDefinitions.java:32)\n\tat ✽.User logs in to Swag Labs with user name \"performance_glitch_user\" password \"secret_sauce\"(file:src/test/resources/features/Login.feature:10)\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "User should verify that page title is a Swag Labs",
+  "name": "User verifies SwagLabs Page header text is \"THANK YOU FOR YOUR ORDER\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_should_verify_that_page_title_is_a_Swag_Labs()"
+  "location": "CheckOutStepDefinitions.user_verifies_SwagLabs_Page_header_text_is(String)"
 });
 formatter.result({
   "status": "skipped"
 });
-formatter.embedding("image/png", "embedded2.png", "Login as user and verify that page title is Swag Labs");
+formatter.embedding("image/png", "embedded1.png", "User adds to cart two or more items");
 formatter.after({
   "status": "passed"
 });
