@@ -15,7 +15,25 @@
             <version>4.8.0</version>
         </dependency>
         
-```        
+```   
+# For parallel running 
+
+```
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M4</version>
+                        <configuration>
+                            <!-- for parallel running Cucumber-->
+                            <parallel>methods</parallel>
+                            <useUnlimitedThreads>true</useUnlimitedThreads>
+                            <includes>
+
+```
+
+
+
 ## Technologies:
 ## Project is created with:
 
